@@ -27,6 +27,8 @@ jobs:
         run: pip install '.[test]'
       - name: Look for style errors
         run: pflake8
+      - name: Look for auto format errors
+        run: black --check --diff dundie tests integration
 
   test:
     needs: lint
