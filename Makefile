@@ -11,7 +11,7 @@ ipython:
 	@.venv/bin/ipython
 
 test:
-	@.venv/bin/pytest -s
+	@.venv/bin/pytest -s --forked
 
 testci:
 	@pytest -v --junitxml=test-result.xml

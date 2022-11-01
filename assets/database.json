@@ -1,0 +1,58 @@
+{
+    "people": {
+        "jim@dundemifflin.com": {
+            "name": "Jim Halpert",
+            "department": "Sales",
+            "role": "Salesman"
+        },
+        "schrute@dundermifflin.com": {
+            "name": "Dwigth Schrute",
+            "department": "Sales",
+            "role": "Manager"
+        },
+        "glewis@dundermifflin.com": {
+            "name": "Gabe Lewis",
+            "department": "C-Level",
+            "role": "CEO"
+        }
+    },
+    "balance": {
+        "jim@dundemifflin.com": 500,
+        "schrute@dundermifflin.com": 100,
+        "glewis@dundermifflin.com": 100
+    },
+    "movement": {
+        "jim@dundemifflin.com": [
+            {
+                "date": "2022-10-31T21:35:44.510881",
+                "actor": "system",
+                "value": 500
+            }
+        ],
+        "schrute@dundermifflin.com": [
+            {
+                "date": "2022-10-31T21:35:44.514569",
+                "actor": "system",
+                "value": 100
+            }
+        ],
+        "glewis@dundermifflin.com": [
+            {
+                "date": "2022-10-31T21:35:44.517452",
+                "actor": "system",
+                "value": 100
+            }
+        ]
+    },
+    "users": {
+        "jim@dundemifflin.com": {
+            "password": "nKyNCgIk"
+        },
+        "schrute@dundermifflin.com": {
+            "password": "5k72tuld"
+        },
+        "glewis@dundermifflin.com": {
+            "password": "aQDMsi53"
+        }
+    }
+}

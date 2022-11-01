@@ -1,1 +1,9 @@
+<<<<<<< Updated upstream
 pytest
+=======
+pytest
+pytest-forked
+flake8
+pyproject-flake8
+black
+>>>>>>> Stashed changes
