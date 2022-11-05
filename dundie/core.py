@@ -16,6 +16,7 @@ def load(filepath):
     'J'
     """
     try:
+
         csv_data = reader(open(filepath))
     except FileNotFoundError as e:
         log.error(str(e))

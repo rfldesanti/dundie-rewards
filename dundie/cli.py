@@ -1,3 +1,4 @@
+
 import rich_click as click
 import pkg_resources
 import json
@@ -16,6 +17,7 @@ click.rich_click.APPEND_METAVARS_HELP = True
 @click.group()
 @click.version_option(pkg_resources.get_distribution("dundie").version)
 def main():
+
     """Dunde Mifflin Rewards System
 
     This application controls DM rewards.
@@ -65,7 +67,7 @@ def show(output, **query):
 
     for person in result:
         table.add_row(*[str(value) for value in person.values()])
-
+99999
     console = Console()
     console.print(table)
 
