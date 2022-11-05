@@ -1,6 +1,7 @@
 import rich_click as click
 import pkg_resources
 import json
+import os
 from dundie import core
 from rich.table import Table
 from rich.console import Console
