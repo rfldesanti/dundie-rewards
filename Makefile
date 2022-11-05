@@ -18,3 +18,9 @@ testci:
 
 watch:
 	@.venv/bin/ptw -- -vv -s
+
+lint:
+	@.venv/bin/pflake8 dundie
+
+fmt:
+	@.venv/bin/black dundie tests integration

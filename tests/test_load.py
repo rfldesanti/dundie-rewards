@@ -2,6 +2,7 @@ import pytest
 from dundie.core import load
 from .constants import PEOPLE_FILE
 
+
 @pytest.mark.unit
 @pytest.mark.high
 def test_load_positive_has_2_people(request):
@@ -9,6 +10,7 @@ def test_load_positive_has_2_people(request):
     assert len(load(PEOPLE_FILE)) == 3
 
     # com breakpoint() é possível entrar no modo debugger durante a geração do test
+
 
 @pytest.mark.unit
 @pytest.mark.high

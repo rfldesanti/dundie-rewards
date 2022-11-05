@@ -1,58 +1,133 @@
 {
     "people": {
-        "jim@dundemifflin.com": {
+        "jim@dundermifflin.com": {
             "name": "Jim Halpert",
-            "department": "Sales",
+            "dept": "Sales",
             "role": "Salesman"
         },
         "schrute@dundermifflin.com": {
             "name": "Dwigth Schrute",
-            "department": "Sales",
+            "dept": "Sales",
             "role": "Manager"
         },
         "glewis@dundermifflin.com": {
             "name": "Gabe Lewis",
-            "department": "C-Level",
+            "dept": "C-Level",
             "role": "CEO"
         }
     },
     "balance": {
-        "jim@dundemifflin.com": 500,
-        "schrute@dundermifflin.com": 100,
+        "jim@dundermifflin.com": 190,
+        "schrute@dundermifflin.com": 200,
         "glewis@dundermifflin.com": 100
     },
     "movement": {
-        "jim@dundemifflin.com": [
+        "jim@dundermifflin.com": [
             {
-                "date": "2022-10-31T21:35:44.510881",
+                "date": "2022-11-02T16:58:55.107538",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2022-11-03T22:49:20.970497",
+                "actor": "rafa",
+                "value": 100
+            },
+            {
+                "date": "2022-11-03T22:50:11.086787",
+                "actor": "rafa",
+                "value": -400
+            },
+            {
+                "date": "2022-11-03T22:55:05.400866",
+                "actor": "rafa",
+                "value": 10
+            },
+            {
+                "date": "2022-11-03T22:55:23.378148",
+                "actor": "rafa",
+                "value": -10
+            },
+            {
+                "date": "2022-11-04T22:24:37.552044",
+                "actor": "rafa",
+                "value": 10
+            },
+            {
+                "date": "2022-11-04T22:24:48.001790",
+                "actor": "rafa",
+                "value": -10
+            },
+            {
+                "date": "2022-11-04T22:25:11.501723",
+                "actor": "rafa",
+                "value": -10
             }
         ],
         "schrute@dundermifflin.com": [
             {
-                "date": "2022-10-31T21:35:44.514569",
+                "date": "2022-11-02T16:58:55.110813",
                 "actor": "system",
                 "value": 100
+            },
+            {
+                "date": "2022-11-03T22:39:06.150853",
+                "actor": "rafa",
+                "value": 400
+            },
+            {
+                "date": "2022-11-03T22:49:20.970516",
+                "actor": "rafa",
+                "value": 100
+            },
+            {
+                "date": "2022-11-03T22:50:11.086807",
+                "actor": "rafa",
+                "value": -400
+            },
+            {
+                "date": "2022-11-03T22:55:05.400883",
+                "actor": "rafa",
+                "value": 10
+            },
+            {
+                "date": "2022-11-03T22:55:23.378166",
+                "actor": "rafa",
+                "value": -10
+            },
+            {
+                "date": "2022-11-04T22:24:37.552061",
+                "actor": "rafa",
+                "value": 10
+            },
+            {
+                "date": "2022-11-04T22:24:48.001807",
+                "actor": "rafa",
+                "value": -10
             }
         ],
         "glewis@dundermifflin.com": [
             {
-                "date": "2022-10-31T21:35:44.517452",
+                "date": "2022-11-02T16:58:55.112558",
                 "actor": "system",
-                "value": 100
+                "value": 500
+            },
+            {
+                "date": "2022-11-03T22:51:00.978261",
+                "actor": "rafa",
+                "value": -400
             }
         ]
     },
     "users": {
-        "jim@dundemifflin.com": {
-            "password": "nKyNCgIk"
+        "jim@dundermifflin.com": {
+            "password": "XDwGcraI"
         },
         "schrute@dundermifflin.com": {
-            "password": "5k72tuld"
+            "password": "ZFKYHeEU"
         },
         "glewis@dundermifflin.com": {
-            "password": "aQDMsi53"
+            "password": "I3gc9YLH"
         }
     }
 }
