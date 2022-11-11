@@ -11,7 +11,7 @@ from rich.console import Console
 def main():
     """Dunde Mifflin Rewards System
 
-    This application controls DM rewards.
+    This CLI application controls DM rewards.
     """
 
 

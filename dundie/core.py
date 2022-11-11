@@ -1,5 +1,8 @@
 """Core module of dundie"""
+from csv import reader
+from dundie.database import connect
 from dundie.utils.log import get_logger
+
 
 log = get_logger()
 
