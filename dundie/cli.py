@@ -5,6 +5,13 @@ from rich.table import Table
 from rich.console import Console
 
 
+click.rich_click.USE_RICH_MARKUP = True
+click.rich_click.USE_MARKDOWN = True
+click.rich_click.SHOW_ARGUMENTS = True
+click.rich_click.GROUP_ARGUMENTS_OPTIONS = True
+click.rich_click.SHOW_METAVARS_COLUMN = False
+click.rich_click.APPEND_METAVARS_HELP = True
+
 
 @click.group()
 @click.version_option(pkg_resources.get_distribution("dundie").version)
@@ -37,3 +44,4 @@ def load(filepath):
 
     console = Console()
     console.print(table)
+ 
