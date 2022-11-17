@@ -44,4 +44,3 @@ def load(filepath):
 
     console = Console()
     console.print(table)
- 

@@ -1,0 +1,13 @@
+{
+    "people": {
+        "joe@doe.com": {
+            "role": "Salesman",
+            "dept": "Sales",
+            "active": true,
+            "name": "Joe"
+        }
+    },
+    "balance": {},
+    "movement": {},
+    "user": {}
+}
