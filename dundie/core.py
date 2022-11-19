@@ -1,6 +1,6 @@
 """Core module of dundie"""
 from csv import reader
-from dundie.database import connect
+from dundie.database import connect, add_person, commit
 from dundie.utils.log import get_logger
 
 

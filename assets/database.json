@@ -5,9 +5,44 @@
             "dept": "Sales",
             "active": true,
             "name": "Joe"
+        },
+        "jim@dundemifflin.com": {
+            "name": "Jim Halpert",
+            "department": "Sales",
+            "role": "Salesman"
+        },
+        "schrute@dundermifflin.com": {
+            "name": "Dwigth Schrute",
+            "department": "Sales",
+            "role": "Manager"
         }
     },
-    "balance": {},
-    "movement": {},
-    "user": {}
+    "balance": {
+        "jim@dundemifflin.com": 500,
+        "schrute@dundermifflin.com": 100
+    },
+    "movement": {
+        "jim@dundemifflin.com": [
+            {
+                "date": "2022-11-18T21:49:02.444605",
+                "actor": "system",
+                "value": 500
+            }
+        ],
+        "schrute@dundermifflin.com": [
+            {
+                "date": "2022-11-18T21:49:02.448274",
+                "actor": "system",
+                "value": 100
+            }
+        ]
+    },
+    "users": {
+        "jim@dundemifflin.com": {
+            "password": "HGJOzNSy"
+        },
+        "schrute@dundermifflin.com": {
+            "password": "3U5agecO"
+        }
+    }
 }

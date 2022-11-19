@@ -17,7 +17,7 @@ fmt:
 	@.venv/bin/black dundie tests integration
 
 test:
-	@.venv/bin/pytest -s
+	@.venv/bin/pytest -s --forked
 
 testci:
 	@pytest -v --junitxml=test-result.xml

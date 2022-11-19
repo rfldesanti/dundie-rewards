@@ -58,7 +58,7 @@ def set_initial_password(db, pk, person):
 
 
 def set_initial_balance(db, pk, person):
-    """Add movement and set initial  balance"""
+    """Add movement and set initial balance"""
     value = 100 if person["role"] == "Manager" else 500
     add_movement(db, pk, value)
 
