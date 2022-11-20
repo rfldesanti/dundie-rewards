@@ -1,11 +1,5 @@
 {
     "people": {
-        "joe@doe.com": {
-            "role": "Salesman",
-            "dept": "Sales",
-            "active": true,
-            "name": "Joe"
-        },
         "jim@dundemifflin.com": {
             "name": "Jim Halpert",
             "department": "Sales",
@@ -15,34 +9,50 @@
             "name": "Dwigth Schrute",
             "department": "Sales",
             "role": "Manager"
+        },
+        "glewis@dundermifflin.com": {
+            "name": "Gabe Lewis",
+            "department": "C_Level",
+            "role": "CEO"
         }
     },
     "balance": {
         "jim@dundemifflin.com": 500,
-        "schrute@dundermifflin.com": 100
+        "schrute@dundermifflin.com": 100,
+        "glewis@dundermifflin.com": 500
     },
     "movement": {
         "jim@dundemifflin.com": [
             {
-                "date": "2022-11-18T21:49:02.444605",
+                "date": "2022-11-20T16:08:58.826552",
                 "actor": "system",
                 "value": 500
             }
         ],
         "schrute@dundermifflin.com": [
             {
-                "date": "2022-11-18T21:49:02.448274",
+                "date": "2022-11-20T16:08:58.830661",
                 "actor": "system",
                 "value": 100
+            }
+        ],
+        "glewis@dundermifflin.com": [
+            {
+                "date": "2022-11-20T16:08:58.831165",
+                "actor": "system",
+                "value": 500
             }
         ]
     },
     "users": {
         "jim@dundemifflin.com": {
-            "password": "HGJOzNSy"
+            "password": "peiOYj9G"
         },
         "schrute@dundermifflin.com": {
-            "password": "3U5agecO"
+            "password": "dNaBeA1v"
+        },
+        "glewis@dundermifflin.com": {
+            "password": "pGjoRCOY"
         }
     }
 }

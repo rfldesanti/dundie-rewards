@@ -17,10 +17,10 @@ def pytest_configure(config):
 
 
 @pytest.fixture(autouse=True)
-def go_to_tmpdir(request): #injeção de dependências
+def go_to_tmpdir(request):  # injeção de dependências
     tmpdir = request.getfixturevalue("tmpdir")
     with tmpdir.as_cwd():
-        yield # protocolo generators
+        yield  # protocolo generators
 
 
 @pytest.fixture(autouse=True, scope="function")

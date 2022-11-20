@@ -1,6 +1,7 @@
 import pytest
 from dundie.database import connect, commit, add_person, EMPTY_DB
 
+
 @pytest.mark.unit
 def test_database_schema():
     db = connect()
@@ -10,16 +11,13 @@ def test_database_schema():
 @pytest.mark.unit
 def test_commit_to_database():
     db = connect()
-    data = {
-        "name": "Joe Doe",
-        "role": "Salesman",
-        "dept": "Sales"
-    }
+    data = {"name": "Joe Doe", "role": "Salesman", "dept": "Sales"}
     db["people"]["joe@doe.com"] = data
     commit(db)
 
     db = connect()
     assert db["people"]["joe@doe.com"] == data
+
 
 @pytest.mark.unit
 def test_add_person_for_the_first_time():
@@ -39,3 +37,5 @@ def test_add_person_for_the_first_time():
 
 @pytest.mark.unit
 def test_negative_add_person_invalid_email():
+    with pytest.raises(ValueError):
+        add_person({}, ".@.com", {})
