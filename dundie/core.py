@@ -35,3 +35,33 @@ def load(filepath):
 
     commit(db)
     return people
+
+
+def read(**query):
+    """Read data from database and filters it using query"""
+    db = connect()
+    return_data = []
+    for pk, data in db["people"].items():
+
+        dept = query.get("dept")
+        if dept and dept != data["dept"]:
+            continue
+
+        #  WALRUS / Assignement Expression
+        if (email := query.get("email")) and email != pk:
+            continue
+
+        return_data.append(
+            {
+                "email": pk,
+                "balance": db["balance"][pk],
+                "last_movement": db["movement"][pk][-1]["date"],
+                **data
+            }
+        )
+
+    return return_data
+
+
+def add(value, **query):
+    """Add value to each record on query"""
