@@ -66,7 +66,7 @@ def show(**query):
         table.add_row(*[str(value) for value in person.values()])
 
     Console().print(table)
-    #console.print(table)
+    # console.print(table)
 
 
 @main.command()
@@ -78,7 +78,7 @@ def add(value, **query):
 
     core.add(value, **query)
 
-    
+
 @main.command()
 @click.argument("value", type=click.INT, required=True)
 @click.option("--dept", required=False)
