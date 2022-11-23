@@ -1,58 +1,93 @@
 {
     "people": {
-        "jim@dundemifflin.com": {
+        "jim@dundermifflin.com": {
             "name": "Jim Halpert",
-            "department": "Sales",
+            "dept": "Sales",
             "role": "Salesman"
         },
         "schrute@dundermifflin.com": {
             "name": "Dwigth Schrute",
-            "department": "Sales",
+            "dept": "Sales",
             "role": "Manager"
         },
         "glewis@dundermifflin.com": {
             "name": "Gabe Lewis",
-            "department": "C_Level",
+            "dept": "C_Level",
             "role": "CEO"
         }
     },
     "balance": {
-        "jim@dundemifflin.com": 500,
-        "schrute@dundermifflin.com": 100,
-        "glewis@dundermifflin.com": 500
+        "jim@dundermifflin.com": 600,
+        "schrute@dundermifflin.com": 200,
+        "glewis@dundermifflin.com": 400
     },
     "movement": {
-        "jim@dundemifflin.com": [
+        "jim@dundermifflin.com": [
             {
-                "date": "2022-11-20T16:08:58.826552",
+                "date": "2022-11-22T23:07:19.101381",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2022-11-22T23:07:47.801013",
+                "actor": "rafa",
+                "value": -100
+            },
+            {
+                "date": "2022-11-22T23:10:32.998383",
+                "actor": "rafa",
+                "value": 300
+            },
+            {
+                "date": "2022-11-22T23:11:03.726188",
+                "actor": "rafa",
+                "value": -100
             }
         ],
         "schrute@dundermifflin.com": [
             {
-                "date": "2022-11-20T16:08:58.830661",
+                "date": "2022-11-22T23:07:19.104799",
                 "actor": "system",
                 "value": 100
+            },
+            {
+                "date": "2022-11-22T23:07:47.801032",
+                "actor": "rafa",
+                "value": -100
+            },
+            {
+                "date": "2022-11-22T23:10:32.998399",
+                "actor": "rafa",
+                "value": 300
+            },
+            {
+                "date": "2022-11-22T23:11:03.726206",
+                "actor": "rafa",
+                "value": -100
             }
         ],
         "glewis@dundermifflin.com": [
             {
-                "date": "2022-11-20T16:08:58.831165",
+                "date": "2022-11-22T23:07:19.105296",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2022-11-22T23:07:47.801036",
+                "actor": "rafa",
+                "value": -100
             }
         ]
     },
     "users": {
-        "jim@dundemifflin.com": {
-            "password": "peiOYj9G"
+        "jim@dundermifflin.com": {
+            "password": "eIW3Ffsi"
         },
         "schrute@dundermifflin.com": {
-            "password": "dNaBeA1v"
+            "password": "mdH3QB1P"
         },
         "glewis@dundermifflin.com": {
-            "password": "pGjoRCOY"
+            "password": "I4NSvOpA"
         }
     }
 }

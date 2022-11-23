@@ -1,5 +1,6 @@
 import rich_click as click
 import pkg_resources
+import sys
 from dundie import core
 from rich.table import Table
 from rich.console import Console
@@ -44,3 +45,45 @@ def load(filepath):
 
     console = Console()
     console.print(table)
+
+
+@main.command()
+@click.option("--dept", required=False)
+@click.option("--email", required=False)
+def show(**query):
+    """Show information about users"""
+    result = core.read(**query)
+
+    if not result:
+        print("Nothing to show")
+        sys.exit(1)
+
+    table = Table(title="Dunder Mifflin Report")
+    for key in result[0]:
+        table.add_column(key.title(), style="magenta")
+
+    for person in result:
+        table.add_row(*[str(value) for value in person.values()])
+
+    Console().print(table)
+    #console.print(table)
+
+
+@main.command()
+@click.argument("value", type=click.INT, required=True)
+@click.option("--dept", required=False)
+@click.option("--email", required=False)
+def add(value, **query):
+    """Add points to the user or department"""
+
+    core.add(value, **query)
+
+    
+@main.command()
+@click.argument("value", type=click.INT, required=True)
+@click.option("--dept", required=False)
+@click.option("--email", required=False)
+def remove(value, **query):
+    """Remove points to the user or department"""
+
+    core.add(-value, **query)

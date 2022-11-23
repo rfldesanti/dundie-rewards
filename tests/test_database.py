@@ -56,10 +56,9 @@ def test_add_or_remove_points_for_person():
     add_movement(db, pk, -100, "manager")
     commit(db)
 
-    db=connect()
+    db = connect()
     after = db["balance"][pk]
 
     assert after == before - 100
     assert after == 400
     assert before == 500
-    

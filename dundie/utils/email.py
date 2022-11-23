@@ -16,7 +16,7 @@ def check_valid_email(address):
 
 def send_email(from_, to, subject, text):
     if not isinstance(to, list):
-        to = list(to)
+        to = [to]
 
     try:
         with smtplib.SMTP(

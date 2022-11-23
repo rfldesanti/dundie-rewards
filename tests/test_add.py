@@ -1,10 +1,10 @@
 import pytest
 from dundie.database import connect, commit, add_person
-from dundie.core import read
+from dundie.core import read, add
 
 
 @pytest.mark.unit
-def test_read_with_query():
+def test_add_movement():
     db = connect()
 
     pk = "joe@doe.com"
@@ -20,13 +20,9 @@ def test_read_with_query():
 
     commit(db)
 
-    response = read()
-    assert len(response) == 2
+    add(-30, email="joe@doe.com")
+    add(90, dept="Management")
 
-    response = read(dept="Management")
-    assert len(response) == 1
-    assert response[0]["name"] == "Jim Doe"
-
-    response = read(email="joe@doe.com")
-    assert len(response) == 1
-    assert response[0]["name"] == "Joe Doe"
+    db = connect()
+    assert db["balance"]["joe@doe.com"] == 470
+    assert db["balance"]["jim@doe.com"] == 190
