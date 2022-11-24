@@ -17,9 +17,9 @@
         }
     },
     "balance": {
-        "jim@dundermifflin.com": 600,
-        "schrute@dundermifflin.com": 200,
-        "glewis@dundermifflin.com": 400
+        "jim@dundermifflin.com": 900,
+        "schrute@dundermifflin.com": 900,
+        "glewis@dundermifflin.com": 900
     },
     "movement": {
         "jim@dundermifflin.com": [
@@ -42,6 +42,41 @@
                 "date": "2022-11-22T23:11:03.726188",
                 "actor": "rafa",
                 "value": -100
+            },
+            {
+                "date": "2022-11-23T21:56:17.648918",
+                "actor": "rafa",
+                "value": 1
+            },
+            {
+                "date": "2022-11-23T21:57:40.875644",
+                "actor": "rafa",
+                "value": -1
+            },
+            {
+                "date": "2022-11-23T22:17:03.644399",
+                "actor": "rafa",
+                "value": 100
+            },
+            {
+                "date": "2022-11-23T22:17:14.328506",
+                "actor": "rafa",
+                "value": -300
+            },
+            {
+                "date": "2022-11-23T22:17:18.424192",
+                "actor": "rafa",
+                "value": -300
+            },
+            {
+                "date": "2022-11-23T22:17:23.698575",
+                "actor": "rafa",
+                "value": 1000
+            },
+            {
+                "date": "2022-11-23T22:18:32.177083",
+                "actor": "rafa",
+                "value": -200
             }
         ],
         "schrute@dundermifflin.com": [
@@ -64,6 +99,41 @@
                 "date": "2022-11-22T23:11:03.726206",
                 "actor": "rafa",
                 "value": -100
+            },
+            {
+                "date": "2022-11-23T21:56:17.648937",
+                "actor": "rafa",
+                "value": 1
+            },
+            {
+                "date": "2022-11-23T21:57:40.875665",
+                "actor": "rafa",
+                "value": -1
+            },
+            {
+                "date": "2022-11-23T22:17:03.644418",
+                "actor": "rafa",
+                "value": 100
+            },
+            {
+                "date": "2022-11-23T22:17:14.328522",
+                "actor": "rafa",
+                "value": -300
+            },
+            {
+                "date": "2022-11-23T22:17:18.424209",
+                "actor": "rafa",
+                "value": -300
+            },
+            {
+                "date": "2022-11-23T22:17:23.698592",
+                "actor": "rafa",
+                "value": 1000
+            },
+            {
+                "date": "2022-11-23T22:18:09.533232",
+                "actor": "rafa",
+                "value": 200
             }
         ],
         "glewis@dundermifflin.com": [
@@ -76,6 +146,36 @@
                 "date": "2022-11-22T23:07:47.801036",
                 "actor": "rafa",
                 "value": -100
+            },
+            {
+                "date": "2022-11-23T21:57:28.749834",
+                "actor": "rafa",
+                "value": 1
+            },
+            {
+                "date": "2022-11-23T21:57:40.875669",
+                "actor": "rafa",
+                "value": -1
+            },
+            {
+                "date": "2022-11-23T22:17:03.644423",
+                "actor": "rafa",
+                "value": 100
+            },
+            {
+                "date": "2022-11-23T22:17:14.328527",
+                "actor": "rafa",
+                "value": -300
+            },
+            {
+                "date": "2022-11-23T22:17:18.424214",
+                "actor": "rafa",
+                "value": -300
+            },
+            {
+                "date": "2022-11-23T22:17:23.698597",
+                "actor": "rafa",
+                "value": 1000
             }
         ]
     },

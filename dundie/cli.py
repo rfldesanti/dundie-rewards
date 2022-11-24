@@ -1,6 +1,7 @@
 import rich_click as click
 import pkg_resources
 import sys
+import json
 from dundie import core
 from rich.table import Table
 from rich.console import Console
@@ -50,9 +51,13 @@ def load(filepath):
 @main.command()
 @click.option("--dept", required=False)
 @click.option("--email", required=False)
-def show(**query):
+@click.option("--output", default=None)
+def show(output, **query):
     """Show information about users"""
     result = core.read(**query)
+    if output:
+        with open(output, "w") as output_file:
+            output_file.write(json.dumps(result))
 
     if not result:
         print("Nothing to show")
@@ -73,17 +78,21 @@ def show(**query):
 @click.argument("value", type=click.INT, required=True)
 @click.option("--dept", required=False)
 @click.option("--email", required=False)
-def add(value, **query):
+@click.pass_context
+def add(ctx, value, **query):
     """Add points to the user or department"""
 
     core.add(value, **query)
+    ctx.invoke(show, **query)
 
 
 @main.command()
 @click.argument("value", type=click.INT, required=True)
 @click.option("--dept", required=False)
 @click.option("--email", required=False)
-def remove(value, **query):
+@click.pass_context
+def remove(ctx, value, **query):
     """Remove points to the user or department"""
 
     core.add(-value, **query)
+    ctx.invoke(show, **query)
